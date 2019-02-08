@@ -79,8 +79,12 @@ main = do
     putStrLn "Podaj wielkosc polyomino:"
     number <-getLine
     putStr (printPolyominos (read number))
-    putStrLn "Wygenerowano nastepujaca liczbe polyomino:"
-    putStr (show (countPolyominos  (read number)))
+    putStr "Wygenerowano nastepujaca liczbe polyomino:"
+    putStrLn (show (countPolyominos  (read number)))
+    end <- getLine
+    return ()
+
+
     
     
 
